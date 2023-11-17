@@ -2,8 +2,139 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    
 }
 
-body {
+nav {
+width: 100vw; /* vw es tamaño de visualizacion del width*/
+height: 10vh;
+background-color: white;
+display:flex;
+justify-content: right;
+position: fixed; /*fijado en un punto*/
+top:0; /*fijado arriba de todo*/
+z-index: 1;
+}
+
+a:hover {
+font-weight: 600;
 
 }
+
+
+.nav-links {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    position: relative; 
+    right:10vh;
+    
+}
+
+.button {
+    background-color:#f78ea7;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+li {
+    
+    list-style: none;
+    margin: 20px;
+    font-size: 1rem;
+   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-section{
+    display: flex;
+    border: #f78ea7 2px solid;
+}
+
+
+.about-section .about-info {
+    padding:0;
+    margin: 5rem;
+}
+
+.about-section .about-info * {
+   margin: 2rem;
+}
+
+.about-section .greeting-name {
+    font-size: 30px;
+    font-weight:400; 
+}
+
+.about-section .about-name {
+    font-size: 60px;
+    font-weight: 900;
+    color:#f78ea7
+}
+
+.about-section .about-info .button {
+    background-color:#f78ea7 
+}
+
+.about-section .about-info .button:hover {
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.about-section .about-img {
+    width: 20rem;
+}
+
+.section-abilities {
+    padding:0rem;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-abilities {
+    padding:0rem;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.column-content {
+    text-align: center;
+}
+
+.quote-section {
+    background-color: #f78ea7;
+    height: 15rem;
+}
+
+.quote-section blockquote {
+    top: 40%;
+    position: relative;
+}
+
+.grid-projects {
+    display: flex;
+    flex-flow: wrap;
+    width: 55rem;
+}
+
+.grid-projects .project {
+    margin: 1rem;
+}
+
+.grid-projects .project:hover {
+    border: #f78ea7 1.5px solid;
+}
+
+.grid-projects .project-thumb {
+    width: 15rem;
+}
+
