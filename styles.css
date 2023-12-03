@@ -90,6 +90,7 @@ a {
     width: 20rem;
 }
 
+
 .section-abilities {
     padding:0rem;
     margin: 5rem;
@@ -98,12 +99,9 @@ a {
 
 }
 
-.section-abilities {
-    padding:0rem;
-    margin: 5rem;
-    display: flex;
-    align-items: center;
-
+.skills-description{
+padding:1rem;
+box-sizing: border-box;
 }
 
 .column-content {
@@ -122,8 +120,14 @@ a {
 
 .grid-projects {
     display: flex;
-    flex-flow: wrap;
-    width: 55rem;
+    flex-flow:wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 80px;
+    
+
 }
 
 .grid-projects .project {
@@ -132,6 +136,7 @@ a {
 
 .grid-projects .project:hover {
     border: #f78ea7 1.5px solid;
+    
 }
 
 .grid-projects .project-thumb {
