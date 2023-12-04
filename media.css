@@ -1,0 +1,29 @@
+/* 2 PROJECTS SECTION*/
+
+
+
+@media (max-width: 900px) {
+ 
+nav {
+
+    visibility: hidden
+}    
+
+.mobile-nav{
+    visibility: visible;
+}
+    /* 1 ABOUT*/
+.about-section {
+    flex-direction: column;
+}
+
+
+.quote {
+    padding: 0 4rem
+}
+
+/*PROJECTS SECTION*/
+.grid-projects {
+    max-width: 800PX;
+}
+}

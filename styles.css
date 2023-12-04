@@ -6,6 +6,12 @@
     
 }
 
+
+
+.mobile-nav{
+    visibility: hidden;
+}
+
 nav {
 width: 100vw; /* vw es tamaño de visualizacion del width*/
 height: 10vh;
@@ -141,5 +147,11 @@ box-sizing: border-box;
 
 .grid-projects .project-thumb {
     width: 15rem;
+}
+
+
+.skills-grid {
+display: flex;
+justify-content:center;
 }
 

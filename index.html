@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica D. Nogueroles - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300;1,900&display=swap"
@@ -18,12 +19,15 @@
 <body>
     <!-- Comienzo Header -->
     <header>
+        <nav class="mobile-nav">
+            soy el menu hamburguesa
+        </nav>
         <nav>
             <!-- Menu navegación -->
 
             <ul class="nav-links">
-                <li><a href="#">HOLA</a></li>
-                <li><a href="#">CONOCIMIENTOS</a></li>
+                <li><a href="#">HOA</a></li>
+                <li><a href="#skills">CONOCIMIENTOS</a></li>
                 <li><a href="#">PROYECTOS</a></li>
                 <li><a href="#" class="button">CONTACTO</a></li>
 
@@ -56,31 +60,47 @@
                 fugit aliquid inventore sunt ut! Fuga quod voluptates
                 suscipit totam corporis reiciendis beatae quos?
             </p>
-            <div class="grid skills-grid">
-                <div class="skill grid-item">
-                    <span class="icono-html"></span>
-                    <p class="skill-title">HTML 5</p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <a href="icono-html" aria-label="HTML">
+                        <i class="fa-brands fa-html5"></i>
+                        <p class="skill-title">HTML 5</p>
+                    </a>
                 </div>
-                <div class="skill grid-item">
-                    <span class="icono-CSS 3"></span>
-                    <p class="skill-title">CSS 3</p>
+                <div class="skill-item">
+                    <a href="icono-css" aria-label="CSS">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p class="skill-title">CSS 3</p>
+                    </a>
                 </div>
-                <div class="skill grid-item">
-                    <span class="icono-Sass"></span>
-                    <p class="skill-title">Sass</p>
-                </div>
-                <div class="skill grid-item">
-                    <span class="icono-JavaScript"></span>
-                    <p class="skill-title">JavaScript</p>
-                </div>
-                <div class="skill grid-item">
-                    <span class="icono-React"></span>
-                    <p class="skill-title">React</p>
+                <div class="skill-item">
+                    <a href="icono-sass" aria-label="SASS">
+                        <i class="fa-brands fa-sass"></i>
+                        <p class="skill-title">SASS</p>
+                    </a>
                 </div>
 
-                <div class="skill grid-item">
-                    <span class="icono-Git"></span>
-                    <p class="skill-title">Git</p>
+
+                <div class="skill-item">
+                    <a href="icono-javascript" aria-label="Java-Script">
+                        <i class="fa-brands fa-js"></i>
+                        <p class="skill-title">Java Script</p>
+                    </a>
+                </div>
+
+                <div class="skill-item">
+                    <a href="icono-react" aria-label="React">
+                        <i class="fa-brands fa-react"></i>
+                        <p class="skill-title">React</p>
+                    </a>
+                </div>
+
+
+                <div class="skill-item">
+                    <a href="icono-git" aria-label="Git">
+                        <i class="fa-brands fa-git"></i>
+                        <p class="skill-title">Git</p>
+                    </a>
                 </div>
             </div>
 
@@ -166,8 +186,8 @@
                         <ul class="contact-social-links">
                             <li class="contact-social-item">
                                 <a href="contact-social-link linkedin-link" aria-label="Linkedin">
-                                    <i> aria-hidden="true" class="fab fa-linkedin
-                                        contact-social-icon"</i><!--no entiendo esto-->
+                                    <i aria-hidden="true" class="fab fa-linkedin
+                                    contact-social-icon"> </i><!--no entiendo esto-->
                                     Jessica Nogueroles
                                 </a>
                             </li>
@@ -179,7 +199,7 @@
                                 <h2 class="section-title">Escribime</h2>
                                 <form action="#" method="POST">
                                     <label for="nombre">Nombre*</label>
-                                    <input type="text" id="nombre" name="apellido" placeholder="Ej: Martina">
+                                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Martina">
 
                                     <label for="apellido">Apellido*</label>
                                     <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez">
@@ -209,8 +229,8 @@
 
     <footer>
         <!--navegation-->
+        <script src="https://kit.fontawesome.com/1f266e94f5.js" crossorigin="anonymous"></script>
     </footer>
-
 </body>
 
 </html>
