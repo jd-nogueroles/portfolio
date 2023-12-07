@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">button
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
             <!-- Menu navegación -->
 
             <ul class="nav-links">
-                <li><a href="#">HOA</a></li>
+                <li><a href="#">HOLA</a></li>
                 <li><a href="#skills">CONOCIMIENTOS</a></li>
                 <li><a href="#">PROYECTOS</a></li>
                 <li><a href="#" class="button">CONTACTO</a></li>
@@ -49,7 +49,7 @@
     </section>
 
     <section class="section-abilities" id="skills">
-        <div class="column-content">
+        
             <h2 class="section title">Mis conocimientos
 
             </h2>
@@ -62,19 +62,19 @@
             </p>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <a href="icono-html" aria-label="HTML">
+                    <a class="skill-icons" href="icono-html" aria-label="HTML">
                         <i class="fa-brands fa-html5"></i>
                         <p class="skill-title">HTML 5</p>
                     </a>
                 </div>
                 <div class="skill-item">
-                    <a href="icono-css" aria-label="CSS">
+                    <a class="skill-icons" href="icono-css" aria-label="CSS">
                         <i class="fa-brands fa-css3-alt"></i>
                         <p class="skill-title">CSS 3</p>
                     </a>
                 </div>
                 <div class="skill-item">
-                    <a href="icono-sass" aria-label="SASS">
+                    <a class="skill-icons" href="icono-sass" aria-label="SASS">
                         <i class="fa-brands fa-sass"></i>
                         <p class="skill-title">SASS</p>
                     </a>
@@ -82,14 +82,14 @@
 
 
                 <div class="skill-item">
-                    <a href="icono-javascript" aria-label="Java-Script">
+                    <a class="skill-icons" href="icono-javascript" aria-label="Java-Script">
                         <i class="fa-brands fa-js"></i>
                         <p class="skill-title">Java Script</p>
                     </a>
                 </div>
 
                 <div class="skill-item">
-                    <a href="icono-react" aria-label="React">
+                    <a class="skill-icons" href="icono-react" aria-label="React">
                         <i class="fa-brands fa-react"></i>
                         <p class="skill-title">React</p>
                     </a>
@@ -97,7 +97,7 @@
 
 
                 <div class="skill-item">
-                    <a href="icono-git" aria-label="Git">
+                    <a class="skill-icons" href="icono-git" aria-label="Git">
                         <i class="fa-brands fa-git"></i>
                         <p class="skill-title">Git</p>
                     </a>
@@ -168,69 +168,74 @@
     <!-- ##### Fin Sección Proyectos #### -->
 
     <!-- ##### Comienzo Sección Contacto #### -->
-    <section class="section contact-section" id="contact">
-        <div class="column">
-            <div class="contact">
-                <section class="contact-column">
-                    <h2 class="section-title">Contactame</h2>
-                    <p class="section-description">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Voluptatibus ipsam natus
-                        accusamus minima labore. Nobis obcaecati sed,
-                        aut molestiae magnam perferendis corporis amet
-                        recusandae, natus magni fuga, quo ipsam eaque.
-                    </p>
+    <section class="contact-section">
+        <div class="contact-me">
+            <h2 class="section-title">Contactame</h2>
+            <p class="section-description">
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatibus ipsam natus
+                accusamus minima labore. Nobis obcaecati sed,
+                aut molestiae magnam perferendis corporis amet
+                recusandae, natus magni fuga, quo ipsam eaque.
+            </p>
+            <!--atributo ARIA, poner links-->
+            <ul class="contact-social-links">
+                <li class="contact-social-item">
+                    <a href="contact-social-link linkedin-link" aria-label="Linkedin">
+                        <i aria-hidden="true" class="fab fa-linkedin
+                        contact-social-icon"> </i><!--no entiendo esto-->
+                        Jessica Nogueroles
+                    </a>
+                </li>
+            </ul>
+        </div>        
+        <div class="form-section">
+            <h2 class="section-title">Escribime</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Martina">
+                <label for="apellido">Apellido*</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez">
 
-                    <section aria-label="Links de redes sociales">
-                        <!--atributo ARIA, poner links-->
-                        <ul class="contact-social-links">
-                            <li class="contact-social-item">
-                                <a href="contact-social-link linkedin-link" aria-label="Linkedin">
-                                    <i aria-hidden="true" class="fab fa-linkedin
-                                    contact-social-icon"> </i><!--no entiendo esto-->
-                                    Jessica Nogueroles
-                                </a>
-                            </li>
-                            <li></li>
-                        </ul>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="hola@gmail.com">
 
-                        <section class="contact-column">
-                            <div class="form-section">
-                                <h2 class="section-title">Escribime</h2>
-                                <form action="#" method="POST">
-                                    <label for="nombre">Nombre*</label>
-                                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Martina">
+                <label for="mensaje">Mensaje*</label>
+                <input type="mensaje" id="mensaje" name="mensaje" placeholder="Escribí tu mensaje">
 
-                                    <label for="apellido">Apellido*</label>
-                                    <input type="text" id="apellido" name="apellido" placeholder="Ej: Perez">
-
-                                    <label for="email">Email*</label>
-                                    <input type="email" id="email" name="email" placeholder="hola@gmail.com">
-
-                                    <label for="mensaje">Mensaje*</label>
-                                    <input type="mensaje" id="mensaje" name="mensaje" placeholder="Escribí tu mensaje">
-
-                                    <button type="submit">Enviar</button>
-
-                                </form>
-                            </div>
-
-
-                        </section>
-
-                    </section>
-
-                </section>
-            </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
+
+   
+
     <!-- ##### Fin Sección Contacto #### -->
+    <!-- ##### Comienzo Footer #### -->
 
     <footer>
-        <!--navegation-->
-        <script src="https://kit.fontawesome.com/1f266e94f5.js" crossorigin="anonymous"></script>
+
+        <ul class="footer-menu">
+            <li><a href="#">HOLA</a></li>
+            <li><a href="#skills">CONOCIMIENTOS</a></li>
+            <li><a href="#">PROYECTOS</a></li>
+            <li><a href="#" class="button">CONTACTO</a></li>
+
+        </ul>
+        <div class="footer-links">
+            <a href="https://ar.linkedin.com/in/jessica-nogueroles-7b6a77223?original_referer=https%3A%2F%2Fwww.google.com%2F" target="blank_" aria-label="Linkedin">
+                        <i aria-hidden="true" class="fab fa-linkedin
+                        contact-social-icon"> </i><!--no entiendo esto-->
+                        Jessica Nogueroles
+        </div>
+        <div class="footer-name">
+            <p>Hecha por Jessica Nogueroles &#128420;</p>
+        </div>
     </footer>
+    
+    <!-- ##### Fin Footer #### -->
+    <script src="https://kit.fontawesome.com/1f266e94f5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
